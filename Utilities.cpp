@@ -16,14 +16,14 @@ int HandleActionInput(std::vector<std::string> actions)
 		}
 	}
 
-	std::string line;
+	std::string divider;
 	for (int i = 0; i < message.length(); i++) {
-		line += "-";
+		divider += "-";
 	}
 
-	std::cout << line << std::endl;
+	std::cout << divider << std::endl;
 	std::cout << message << std::endl;
-	std::cout << line << std::endl;
+	std::cout << divider << std::endl;
 
 	std::cout << "Enter Option (Number):\n";
 
