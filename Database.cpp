@@ -71,6 +71,7 @@ void Database::OpenTable(DataTable* table)
 void Database::CloseCurrentTable()
 {
 	_currentTable = nullptr;
+	delete _currentTable;
 	ChangeView(MainMenu);
 }
 

@@ -39,4 +39,8 @@ public:
 		_tables = std::vector<DataTable>();
 		Init();
 	}
+
+	~Database() {
+		delete _currentTable;
+	}
 };
