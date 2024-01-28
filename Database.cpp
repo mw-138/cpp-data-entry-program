@@ -89,7 +89,7 @@ void Database::ChangeView(DatabaseView view)
 
 void Database::HandleMainMenuView()
 {
-	int input = HandleActionInput({ "Open Table", "List Tables", "Create Table", "Delete Table" });
+	int input = HandleActionInput({ "Open Table", "List Tables", "Create Table", "Delete Table", "Exit" });
 	std::string tableId;
 
 	switch (input) {
@@ -111,6 +111,9 @@ void Database::HandleMainMenuView()
 		std::cout << "Enter table id:\n";
 		std::cin >> tableId;
 		DeleteTable(tableId);
+		break;
+	case 4:
+		_userInputActive = false;
 		break;
 	}
 }
